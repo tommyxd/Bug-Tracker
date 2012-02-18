@@ -1,1 +1,13 @@
-Project Title: <%= @project.title %>
+<table class="profile" summary="Project Information">
+  <tr>
+    <td class="main">
+      <h1>
+        <%= @project.title %>
+      </h1>
+    </td>
+    <td class="sidebar round">
+      <strong>Title</strong>  <%= @project.title %><br />
+      <strong>Issues</strong> <%= link_to "#", "View Issues" %>
+    </td>
+  </tr>
+</table>
