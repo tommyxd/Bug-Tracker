@@ -166,3 +166,11 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+ul.projects {
+  margin-top: 1em;
+}
+
+.projects li {
+  list-style: none;
+}

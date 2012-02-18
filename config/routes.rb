@@ -1,9 +1,8 @@
 BugTracker::Application.routes.draw do
-  get "sessions/new"
-
   resources :projects
   resources :users
   resources :sessions
+  resources :issues
 
   match '/about',   :to => 'pages#about'
   match '/contact', :to => 'pages#contact'

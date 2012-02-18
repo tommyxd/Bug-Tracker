@@ -19,4 +19,14 @@ describe Project do
     long_name_project = Project.new @attr.merge(:title => long_name)
     long_name_project.should_not be_valid
   end
+
+  describe "issues association" do
+    before :each do
+      @project = Project.create @attr
+    end
+
+    it "should have an issues attribute" do
+      @project.should respond_to(:issues)
+    end
+  end
 end

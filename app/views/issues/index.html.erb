@@ -1,0 +1,8 @@
+<h1>Known issues</h1>
+
+<% unless @project.issues.empty? %>
+  <table>
+    <%= render @issues %>
+  </table>
+  <%= will_paginate @issues %>
+<% end %>

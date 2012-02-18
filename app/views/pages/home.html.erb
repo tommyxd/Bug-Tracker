@@ -2,5 +2,6 @@
 <p>
 This is the home page for the Bug Tracker project.
 </p>
-
-<%= link_to "Sign Up", signup_path, :class => "signup_button round" %>
+<% if !signed_in? %>
+  <%= link_to "Sign Up", signup_path, :class => "signup_button round" %>
+<% end %>
