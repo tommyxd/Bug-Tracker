@@ -6,7 +6,7 @@ gem 'rails', '3.1.3'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'will_paginate', '3.0.pre2'
+gem 'will_paginate', '3.0.5'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
